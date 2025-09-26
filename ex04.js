@@ -4,6 +4,13 @@
 
 function sumOfDigits(n) {
   // Your code here
+  if (n.length === 0){
+    return 0;
+  }
+
+  let first = n[0];
+  n.splice(0, 1)
+  return first + sumOfDigits(n);
 }
 
 console.log(sumOfDigits([1, 3, 7, 1, 8])); // 20

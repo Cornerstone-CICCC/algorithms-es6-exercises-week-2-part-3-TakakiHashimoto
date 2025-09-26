@@ -5,6 +5,9 @@
 
 function subtract(...numbers) {
   // Your code here
+  return numbers.reduce((acc, curr) =>{
+    return acc - curr 
+  }, numbers[0]*2)
 }
 
 console.log(subtract(10, 2, 3)); // Example usage
